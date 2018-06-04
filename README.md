@@ -1,7 +1,7 @@
 # Integrify Ninth Assignment
 
 This is my ninth assignment of Integrify program.
-![Final Result](https://raw.githubusercontent.com/vietdang7/integrify-assignment-8-photo/master/img/result2.png)
+![Final Result](https://github.com/vietdang7/integrify-assignment-9/blob/master/result3.png)
 
 
 ## Purpose of this assignment
