@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Cryptocurrency Coins</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+  </head>
+  <body>
+    <header>
+      <h1>Cryptocurrency Coins</h1>
+    </header>
+    <section>
+      <div class="filter-container">
+        <input type="text" placeholder="Search" onkeyup="assignEvent.filterCoins()" id="filterInput">
+        <button type="button" name="sort-by-name" onclick="assignEvent.sortByName()" class="sort-btn">Sort by Name</button>
+        <button type="button" name="sort-by-price" onclick="assignEvent.sortByPrice()" class="sort-btn">Sort by Price</button>
+        <button type="button" name="sort-by-rank" onclick="assignEvent.sortByRank()" class="sort-btn">Sort by Rank</button>
+      </div> <!-- end .filter-container -->
+    </section>
+    <section class="coins-container">
+      <div class="coin-item-header">
+        <div class="coinName-h">
+          Name
+        </div>
+        <div class="coinSymbol-h">
+          Symbol
+        </div>
+        <div class="coinRank-h">
+          Rank
+        </div>
+        <div class="coinPrice-h">
+          Price (USD)
+        </div>
+        <div class="percent_change_24h-h">
+          Percent change 24h
+        </div>
+      </div>
+      <div id="coinsList">
+
+      </div>
+
+    </section>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

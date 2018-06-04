@@ -1,0 +1,117 @@
+/* General setting */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+/* header */
+header h1 {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* filter-container */
+.filter-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.filter-container * {
+  margin-right: 10px;
+}
+
+.filter-container input {
+  padding-left: 10px;
+}
+
+.sort-btn {
+  padding: 5px 10px;
+}
+
+/* coins-container */
+.coins-container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* coin item */
+.coin-item,
+.coin-item-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.coin-item-header {
+  font-weight: bold;
+}
+
+.coin-item {
+  background-color: lightgrey;
+  padding: 10px 10px;
+}
+.coin-item:nth-of-type(even) {
+  background-color: white;
+}
+
+.green-percent {
+  color: green;
+}
+
+.green-percent::after {
+  content: " ↗";
+}
+
+.red-percent {
+  color: red;
+}
+
+.red-percent::after {
+  content: " ↘";
+}
+
+.coinName {
+  font-weight: bold;
+}
+
+/* Hover animation */
+@-webkit-keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  75% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+}
+@keyframes hvr-pulse {
+  25% {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+  }
+  75% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+.hvr-pulse {
+  /* display: inline-block;
+  vertical-align: middle; */
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-pulse:hover,
+.hvr-pulse:focus,
+.hvr-pulse:active {
+  -webkit-animation-name: hvr-pulse;
+  animation-name: hvr-pulse;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
